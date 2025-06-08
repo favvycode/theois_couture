@@ -14,32 +14,24 @@ html, body {
   align-items: center;
   margin: 0;
   padding: 0;
-  background-image: url("assert/images/doubra.jpg"); /* Replace with your image path */
+  background-image: url("assert/images/doubra.jpg"); 
   background-size: cover; /* Stretch to fill the screen */
   background-position: center; /* Center the image */
   background-repeat: no-repeat;
   font-family: sans-serif;
-  color: white; /* Make text readable over image */
+  color: white; 
   object-fit: contain;
   box-sizing: border-box;
 }
 
 .content {
-  /*background-color: rgba(0,0,0,0.5); /* Optional: translucent overlay for better contrast */
-  /*min-width: 50px;*/
-  /*max-width: 1000px;
-  min-width: 320px;*/
   margin: 100px auto;
   border-radius: 10px;
   display: flex;
   justify-content: center;
-  /*height: auto;*/
-  /*height: 320px;*/
- /* border: 1px solid red;*/
   border-radius: 10px;
    position: relative;
   overflow: hidden;
-  
 }
 
 .section1{
@@ -50,13 +42,11 @@ html, body {
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-   
 }
 
 
 nav {
   height: 50px;
-  /*background-color: #fff;*/
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -72,10 +62,7 @@ nav {
   /*border: 1px solid purple;*/
   position: relative;
   z-index: 101;
-
 }
-
-
 
 #menu-toggle:checked+nav+.mobile-nav {
   display: flex;
@@ -95,14 +82,17 @@ nav {
   border: 8px solid black;
 }
 
-
 #menu-toggle {
   display: none;
 }
 
-/*#menu-toggle:checked+ul+.image+.hamburger-icon {
+#menu-toggle:not(:checked) ~ #mars-icon {
   display: none;
-}*/
+}
+
+#mars-icon:target {
+  display: block;
+}
 
 #menu-toggle+nav .hamburger-icon .fa-xmark {
   display: none;
@@ -115,7 +105,6 @@ nav {
   object-fit: contain;
   width: 100%;
   height: 100%;
-  /*padding: 0px 10px;*/
   box-sizing: border-box;
   background-color: black;
   box-shadow: 4px 2px 4px rgba(0, 0, 0, 1);
@@ -123,7 +112,6 @@ nav {
   justify-content: center;
   align-items: center;
   border-radius: 10px;
-  /*margin-right: 20px;*/
 }
 
 .mobile-nav>ul {
@@ -133,7 +121,6 @@ nav {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  /*margin: 20px 0px;*/
   background-color: #333;
   width: 50%;
   height: 60%;
@@ -150,8 +137,6 @@ nav {
   color: burlywood;
 }
 
-
-
 .mobile-link-items:hover {
   color: #007bff;
   text-decoration: underline;
@@ -159,11 +144,9 @@ nav {
 
 .logo{
     display: flex;
-    /*justify-content: center;*/
     font-family: 'Playfair Display';
     font-size: 13px;
     font-weight: 450;
-    /*gap: 1px;*/
 }
 
 
@@ -171,13 +154,9 @@ nav {
   max-width: 10%;
 }
 
-
-
 .banner-left-section {
   display: flex;
   flex-direction: column;
-  /*justify-content: center;*/
-  /*align-items: center;*/
   width: 100%;
   gap: 3px;
   /*border: 1px solid blue;*/
@@ -192,8 +171,6 @@ nav {
   color: black;
   width: 120px;
   display: flex;
-  /*align-self: flex-end;*/
- /* padding-left: 10px;*/
 }
 
 .banner-left-section>ul {
@@ -202,7 +179,6 @@ nav {
   font-size: 20px;
   font-weight: 500;
 }
-
 
 .button-element {
   outline-style: none;
@@ -220,12 +196,9 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  /*align-self: center;*/
   gap: 2px;
   margin-left: 20px;
 }
-
-
 
 .button-element:hover {
   background: burlywood;
@@ -234,7 +207,6 @@ nav {
 
 .button-element img{
   max-width: 10%;
-  
 }
 
 .socialmedia{
@@ -247,7 +219,6 @@ nav {
   margin: 0px 10px;
   text-decoration: none;
 }
-
 
 .socialmedia a:hover {
   color: #007bff; /* Change color on hover */
@@ -347,7 +318,6 @@ nav {
 .socialmedia a {
   font-size: 25px;
 }
-
 }
 
 @media (min-width :1000px){
@@ -369,7 +339,6 @@ nav {
 .logo{
     font-size: 25px;
     font-weight: 450;
-    /*gap: 1px;*/
 }
 
 
@@ -412,7 +381,6 @@ nav {
 }
 
 .mobile-nav{
-  /*padding: 0px, 10px;*/
   padding-top: 60px;
 }
 
