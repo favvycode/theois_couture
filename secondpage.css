@@ -71,7 +71,7 @@ nav {
   padding-left: 5px;
   /*border: 1px solid purple;*/
   position: relative;
-  z-index: 100;
+  z-index: 101;
 
 }
 
@@ -87,7 +87,14 @@ nav {
 
 #menu-toggle:checked+nav .hamburger-icon .fa-xmark {
   display: flex !important;
+  padding-left: 0px;
+  margin-left: 5px;
+  background-color: #333;
+  color: burlywood;
+  border-radius: 50%;
+  border: 8px solid black;
 }
+
 
 #menu-toggle {
   display: none;
@@ -104,31 +111,46 @@ nav {
 .mobile-nav {
   display: none;
   position: absolute;
+  z-index: 100;
   object-fit: contain;
   width: 100%;
   height: 100%;
-  padding: 0px 20px;
+  /*padding: 0px 10px;*/
   box-sizing: border-box;
-  background-color: #ffffff;
+  background-color: black;
   box-shadow: 4px 2px 4px rgba(0, 0, 0, 1);
-  padding-top: 60px;
+  padding-top: 30px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  /*margin-right: 20px;*/
 }
 
 .mobile-nav>ul {
   list-style-type: none;
   display: flex;
-  gap: 10px;
+  gap: 5px;
   flex-direction: column;
-  margin: 20px 0px;
+  justify-content: space-between;
+  align-items: center;
+  /*margin: 20px 0px;*/
+  background-color: #333;
+  width: 50%;
+  height: 60%;
+  border-radius: 10px;
 }
 
+
 .mobile-link-items {
-  font-size: 12px;
+  font-size: 20px;
   cursor: pointer;
+  font-weight: 500;
   min-width: 24px;
   transition: 0.5s;
-  color: #4d4d4d;
+  color: burlywood;
 }
+
+
 
 .mobile-link-items:hover {
   color: #007bff;
@@ -164,7 +186,7 @@ nav {
 }
 
 .banner-left-section>small {
-  font-weight: 500;
+  font-weight: 400;
   font-size: 8px;
   line-height: 110%;
   color: black;
@@ -250,6 +272,7 @@ nav {
   height: 100%;
   max-width: 100%;
   object-fit: cover;
+  border-radius: 10px;
 }
 
 @media (min-width :768px){
@@ -274,6 +297,18 @@ nav {
     /*gap: 1px;*/
 }
 
+.mobile-nav{
+  /*padding: 0px, 20px;*/
+  padding-top: 60px;
+}
+
+.mobile-nav>ul {
+  /*margin: 20px 12px;*/
+}
+
+.mobile-link-items {
+  font-size: 25px;
+}
 
 .logo img {
   max-width: 8%;
@@ -376,4 +411,16 @@ nav {
   font-size: 25px;
 }
 
+.mobile-nav{
+  /*padding: 0px, 10px;*/
+  padding-top: 60px;
+}
+
+.mobile-nav>ul {
+ /* margin: 20px 12px;*/
+}
+
+.mobile-link-items {
+  font-size: 30px;
+}
 }
